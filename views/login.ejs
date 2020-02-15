@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0;"/>
+<title>云顶ICT</title>
+<link rel="stylesheet" type="text/css" href="http://cdn.bootcss.com/layer/3.0.1/mobile/need/layer.css" />
+<link rel="stylesheet" type="text/css" href="./css/style.css" />
+</head>
+
+<body>
+<div class="whole">
+	<div class="title">Welcome to 云顶ICT</div>
+    <div class="coordinates-icon">
+    	<div class="coordinates topAct">
+        	<img src="image/yunding.png" />
+        </div>
+        <div class="circle-1-1 circle-show-2"></div>
+        <div class="circle-2-2 circle-show-1"></div>
+        <div class="circle-3-3 circle-show"></div>
+    </div>
+    <div class="login-form">
+    	<form action="/doput">
+        	<div class="user-name common-div username">
+                <input class="name" type="text" name="name" value="" placeholder="姓 名" />
+            </div>
+            <div class="user-name common-div studentid">
+                <input class="number" type="text" name="number" value="" placeholder="学 号" />
+            </div>
+
+            <input type="submit" class="login-btn common-div" placeholder="提 交">
+        </form>
+    </div>
+</div>
+<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="js/phone.js" ></script>
+<script type="text/javascript" src="http://cdn.bootcss.com/layer/3.0.1/mobile/layer.min.js"></script>
+<script>
+
+window.onload= function(){
+	$(".login-btn").on('click',function(){
+		var allVal='';
+//        var reg = /^[\d]{10}$/;
+		if ($(".name").val() == "") {
+			alert("请输入姓名");
+//			allVal='姓名不能为空!';
+//			layerOpen(allVal);
+		}
+		if (($(".number").val()) < 2010000000 || ($(".number").val()) > 2018000000) {
+			alert("请输入正确格式的学号");
+//			allVal='学号不能为空!';
+//			layerOpen(allVal);
+		}
+	});
+}
+</script>
+</body>
+</html>

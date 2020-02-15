@@ -1,0 +1,95 @@
+/*
+* @Author: w9349
+* @Date:   2017-12-14 20:25:12
+* @Last Modified by:   w9349
+* @Last Modified time: 2017-12-14 21:50:55
+*/
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	text-decoration: none;
+}
+.clear{
+	clear: both;
+}
+html,body{
+	width: 100%;
+	height: 100%;
+}
+body{
+	background-image: url(../image/bg.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+.continer{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	overflow: hidden;
+}
+.img{
+	width: 33vw;
+	height: 32.8vh;
+	position: absolute;
+	top: 1.9vh;
+	left: 3.5vw;
+}
+.img>img{
+	width: 100%;
+	height: 100%;
+}
+.txt{
+	position: absolute;
+	width: 50vw;
+	height: 45vh;
+	top: 3.6vh;
+	right: 3.5vw;
+}
+.txt p{
+	writing-mode: vertical-rl;
+	float: right;
+}
+.txtleft{
+	float: left;
+	margin-right: 3vw;
+}
+.txtleft>p{
+	font-size: 12px;
+	color: #222120;
+}
+.textright{
+	float: left;
+	border-left: 3px solid #968f7c;
+	padding-left: 1vw;
+}
+.textright>p{
+	font-size: 25px;
+}
+.num{
+	position: absolute;
+	left: 2.3vw;
+	bottom: 2.4vh;
+}
+.num>p{
+	color: #3c3b37;
+}
+.logo{
+	width: 13vw;
+	height: 4.7vh;
+	position: absolute;
+	right: 2.6vw;
+	bottom: 2.6vh;
+}
+.logo>img{
+	width: 100%;
+	height: 100%;
+}
+@media (max-width: 320px){
+	.txtleft>p{
+		font-size: 10px;
+	}
+	.textright>p{
+		font-size: 20px;
+	}
+}
